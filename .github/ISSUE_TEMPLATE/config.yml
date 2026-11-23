@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Guides and docs
+    url: https://p2a.sh/guides
+    about: Setup guides for ChatGPT, Claude, Grok Bot, Instinct, any MCP app, and the SDK.
+  - name: FAQ
+    url: https://p2a.sh/faq
+    about: Common questions about connections, approvals, and access.
+  - name: Report a security vulnerability
+    url: https://github.com/p2a-sh/.github/blob/main/SECURITY.md
+    about: Please don't open a public issue. Follow the security policy instead.

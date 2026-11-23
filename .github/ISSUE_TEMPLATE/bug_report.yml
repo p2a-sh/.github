@@ -1,0 +1,41 @@
+name: Bug report
+description: Something in this repository doesn't work as documented.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. **Don't paste access tokens (`ibi_…`), keys, or real message content.** Security issues go to info@p2a.sh. See SECURITY.md.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: The smallest code or steps that show the problem.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      placeholder: p2a-sdk@0.1.0
+    validations:
+      required: true
+  - type: input
+    id: runtime
+    attributes:
+      label: Runtime
+      placeholder: Node 20.x, Python 3.12, macOS 15 …
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: SDK logs carry request ids, not tokens. Remove anything private before pasting.
+      render: text
